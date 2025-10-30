@@ -19,7 +19,7 @@ public:
         a.push_back(root->val);
         inorder(root->right, a);
     }
-    TreeNode* bstConvert(int s, int e,   vector<int> inorderval){
+    TreeNode* bstConvert(int s, int e,   vector<int> &inorderval){
         if(s>e){
             return NULL;
         }
